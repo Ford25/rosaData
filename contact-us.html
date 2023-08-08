@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!--AOS ANIMATION LINK-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+
+    <!--TITLE-->
+    <title>Rosa Data LLC - Contact Us</title>
+</head>
+<body>
+
+    <!--NAVBAR SECTION-->
+    <header>
+        <div class="limiter">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-tanffy.svg" alt="">
+                    </a>
+                </div>
+
+                <ul class="navlinks" id="links" >
+                    <li class="navitems" ><a href="index.html" class="itemlinks">Home</a></li>
+                    <li class="navitems"><a href="index.html#about-us" class="itemlinks">About Us</a></li>
+                    <li class="navitems contact-us"><a href="" class="itemlinks">Contact Us</a></li>
+                </ul>
+
+                <div id="burger">
+                    <div class="burgerlines"></div>
+                    <div class="burgerlines"></div>
+                    <div class="burgerlines"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!--CONTACT US-->
+
+   <div class="section-container">
+    <div class="contact-us-section">
+        <h1 class="title">Contact <span>Us</span></h1>
+
+        <div class="glow-effect contact-glow">
+            <img class="" src="assets/images/eclipse-5.png" alt="">
+        </div>
+
+        <div class="contact-form">
+            <div class="left-side">
+
+                <img class="circle-design" src="assets/images/contact-circle-design.png" alt="">
+
+                <h1>Contact Information</h1>
+                <h2>Are You Prepared to Enhance Your Fraud Strategy?</h2>
+                <p>Implement an effective strategy to ensure your attention is rightly placed on precisely identifying authentic customers, thereby fostering the growth and development of strong customer relationships.</p>
+            </div>
+
+            <div class="right-side">
+
+                <form method="post" action="contact.php">
+
+                    <div class="form-wrapper">
+                        <label class="subtitle" >NAME: </label>
+                        <input name="name" id="name" type="text" class="form-control" required>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <label class="subtitle" >NUMBER: </label>
+                        <input name="number" id="number" type="number" class="form-control" required>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <label class="subtitle">EMAIL ADDRESS:</label>
+                        <input name="email" id="email" type="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <label class="subtitle">MESSAGE:</label>
+                        <textarea name="message1" class="textarea" cols="64" rows="6" required ></textarea>
+                    </div>
+
+                    <div class="submit-button">
+                        <input type="submit" name="button" id="esub_button" value="Send Message" class="button__green button application__submit__button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+    
+
+
+    <!--FOOTER-->
+    <footer id="footer">
+        <div class="footer-container">
+
+            <div class="middle-footer">
+                <div class="reserved">
+                    <p>Rosa Data LLC © 2023. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--SCRIPT TAGS-->
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!--MENUBAR SCRIPT-->
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous"></script>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const links = document.getElementById('links');
+
+        burger.addEventListener('click', () => {
+            links.classList.toggle('active');
+        })
+
+        $("#links").click(() => {
+            links.classList.remove('active');
+        })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("header").addClass("black");
+            }
+            else{
+                $("header").removeClass("black");
+            }
+        });
+    </script>
+
+
+
+</body>
+</html>

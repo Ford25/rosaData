@@ -1,0 +1,173 @@
+@font-face { font-family: CrosstenNormal; src: url('CrosstenBold.otf'); } 
+
+.reasons-glow{
+    position: absolute;
+    top: -200px;
+    left: 0;
+    z-index: -2;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+
+.reasons-to-choose{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 95px 50px 95px;
+
+    
+    .cirlce-design{
+        position: absolute;
+        top: 30%;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+    }
+
+
+    h1{
+        color: #FFF;
+        text-align: center;
+        font-family: Prompt;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 2.75px;
+        line-height: 103%;
+        text-align: center; 
+        color: #FFFFFF;
+    }
+    span{
+        color:#FFC727 ;
+    }
+    p{
+        color: #FFF;
+        text-align: center;
+        font-family: Prompt;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;           
+        max-width: 679px;
+        width: 100%;   
+        padding-top: 35px;
+    }
+
+    .guide-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 60px;
+
+        .guide{
+            width: 380px;
+            padding: 45px 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #FFC727;
+            border-radius: 5px;
+            margin: 20px;
+            transition: ease-in-out .1s;
+            cursor: pointer;
+            background-color: rgba(6, 6, 6, 0.2); /* Adjust the opacity to your liking */
+            backdrop-filter: blur(10px); /* Adjust the blur radius to your liking */
+          
+
+            h1{
+                color: #FFF;
+                font-family: Prompt;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 121.5%;  
+                text-align: left;                             
+            }
+            h2{
+                color: #FFF;
+                font-family: Prompt;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 121.5%;                 
+                padding-top: 15px;              
+            }
+        }
+
+        .guide:hover{
+            background: rgba(248, 195, 43, 0.05);
+        }
+    }
+}
+
+@media(max-width: 1500px){
+    .reasons-to-choose{
+        padding: 200px 50px 50px 50px;
+
+        .guide-container{
+            .guide{
+                margin: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .reasons-to-choose{
+        padding: 180px 95px 50px 95px;
+
+        .glow-effect{
+            width: 100%;
+        }
+
+        .guide-container{
+            .guide{
+                margin: 20px;
+
+                h1,h2{
+                    text-align: center;
+                }
+            }
+
+            
+        }
+    }
+}
+
+@media(max-width:630px){
+    .reasons-to-choose{
+        padding: 140px 35px 0 35px;
+
+        h1{
+            font-size: 42px;
+            line-height: 103%;
+        }
+
+        .guide-container{
+            .guide{
+                padding: 60px 45px;
+            }
+        }
+    }
+}
+
+@media(max-width:435px){
+    .reasons-to-choose{
+        .guide-container{
+            .guide{
+                width: 100%;
+                margin: 10px;
+                padding: 35px 15px;
+            }
+        }
+    }
+}

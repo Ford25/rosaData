@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+    
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(7, 7, 7); 
+    border-radius: 10px;
+}
+    
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(94.16deg, #DF9E00 1.49%, #DAAD24 1.5%, #EFB82A 95.31%);
+    border-radius: 10px;
+}        
+
+body{
+    background-color: #0E0E0E;
+}
+
+.section-container{
+    width: 100%;
+    position: relative;
+    
+  }
+
+@import "scss/nav-bar";
+@import "scss/hero-section";
+@import "scss/reasons-to-choose";
+@import "scss/about_A";
+@import "scss/about_B";
+@import "scss/about_C";
+@import "scss/footer";
+@import "scss/contact-us";
